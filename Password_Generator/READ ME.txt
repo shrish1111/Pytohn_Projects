@@ -1,0 +1,8 @@
+PASSWORD GENERATOR IN PYTHON
+
+This program will generate a randon password of given length 
+
+
+other use case:
+
+It can also be modified to encrypt files, by changing specific alphabet to some other 
