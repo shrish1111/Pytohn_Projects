@@ -15,14 +15,14 @@ def Dictionary(word):
 
 while True:
     word = input("Enter a word to search: ")
-    word = word.lower()
+    #word = word.lower()
     if word in data.keys():
         defination = Dictionary(word)
         for i in defination:
             #print("Defination of ",word,"is ",i)
             print(i)
     elif len(get_close_matches(word, data.keys()))> 0:
-        print("Do you mean",get_close_matches(word, data.keys()),"?")
+        print("Do you mean",get_close_matches(word, data.keys(),cutoff=0.6,n = 6),"?")
     else:
         print("You entered wrong word, check again")
         
